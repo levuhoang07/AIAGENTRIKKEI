@@ -48,7 +48,7 @@ REQUIRED_COLUMNS = [
     "Mô Hình Bán Lẻ", "Số Cửa Hàng", "Số Kho Vận Hành", "Doanh Thu Năm (VNĐ)", "Giải Pháp Lựa Chọn",
     "Độ Tương Thích Sản Phẩm", "Ngân Sách Dự Kiến Đầu Tư (VND)", "Yêu Cầu SLA Kỹ Thuật",
     "Khoảng Cách Đến Trạm Kỹ Thuật (km)", "Khả Năng Đáp Ứng của Hưng Phát", "Kỳ Thống Kê",
-    "Nguồn Tài Liệu Dữ Liệu", "Trùng Lặp Nguồn", "Ngày Khảo Sát", "Phân Khúc Khách Hàng ",
+    "Nguồn Tài Liệu Dữ Liệu", "Trùng Lặp Nguồn", "Ngày Khảo Sát", "Phân Khúc Khách Hàng",
     "Kênh Tiếp Cận", "Mức Độ Sẵn Sàng Số (1-5)", "Người Đại Diện / Chức Danh", "Số Điện Thoại / Email",
     "Ghi Chú Đánh Giá / Rủi Ro Vận Hành", "Kết Luận Đánh Giá"
 ]
@@ -73,7 +73,7 @@ SCHEMA_SPEC = [
     {"stt": 17, "name": "Nguồn Tài Liệu Dữ Liệu", "type": "Chuỗi (String)", "required": True, "sample": "Báo cáo Hiệp hội AVR", "description": "Tên nguồn tin trích xuất"},
     {"stt": 18, "name": "Trùng Lặp Nguồn", "type": "Enum", "required": True, "sample": "KHÔNG LẶP", "description": "KHÔNG LẶP hoặc CÓ LẶP NGUỒN"},
     {"stt": 19, "name": "Ngày Khảo Sát", "type": "Ngày (Date)", "required": True, "sample": "15/04/2024", "description": "Định dạng chuẩn d/m/yyyy"},
-    {"stt": 20, "name": "Phân Khúc Khách Hàng ", "type": "Enum", "required": True, "sample": "Doanh nghiệp (B2B)", "description": "B2B, Khách hàng cá nhân, VIP"},
+    {"stt": 20, "name": "Phân Khúc Khách Hàng", "type": "Enum", "required": True, "sample": "Doanh nghiệp (B2B)", "description": "B2B, Khách hàng cá nhân, VIP"},
     {"stt": 21, "name": "Kênh Tiếp Cận", "type": "Chuỗi (String)", "required": True, "sample": "Khảo sát thực địa", "description": "Kênh thu thập thông tin"},
     {"stt": 22, "name": "Mức Độ Sẵn Sàng Số (1-5)", "type": "Số nguyên (Integer)", "required": True, "sample": "5", "description": "Thang điểm 1 đến 5 đánh giá hạ tầng số"},
     {"stt": 23, "name": "Người Đại Diện / Chức Danh", "type": "Chuỗi (String)", "required": True, "sample": "Nguyễn Văn A - GĐ", "description": "Họ tên & chức danh người đại diện"},
