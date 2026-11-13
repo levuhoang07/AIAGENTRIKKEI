@@ -147,3 +147,4 @@ if "function parseAndAnalyzeClientSide" not in content:
 INDEX_HTML.write_text(content, encoding="utf-8")
 ROOT_HTML.write_text(content, encoding="utf-8")
 print("SUCCESS: Dual engine successfully injected!")
+
