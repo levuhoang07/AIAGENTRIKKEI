@@ -39,22 +39,22 @@
     </script>
     <style>
         :root {
-            --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.06) 100%);
-            --glass-bg-hover: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.10) 100%);
-            --glass-border: rgba(255, 255, 255, 0.35);
-            --glass-border-hover: rgba(255, 255, 255, 0.65);
-            --glass-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.45), inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.75), inset 0 -1px 1px 0 rgba(255, 255, 255, 0.15);
-            --glass-shadow-hover: 0 28px 60px -10px rgba(0, 0, 0, 0.55), inset 0 2px 2px 0 rgba(255, 255, 255, 0.95), inset 0 -1px 1px 0 rgba(255, 255, 255, 0.25);
+            --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.86) 0%, rgba(255, 255, 255, 0.74) 100%);
+            --glass-bg-hover: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.84) 100%);
+            --glass-border: rgba(255, 255, 255, 0.95);
+            --glass-border-hover: rgba(59, 130, 246, 0.65);
+            --glass-shadow: 0 16px 36px -8px rgba(35, 15, 60, 0.22), inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 1), inset 0 -1px 1px 0 rgba(255, 255, 255, 0.4);
+            --glass-shadow-hover: 0 24px 50px -10px rgba(35, 15, 60, 0.32), 0 0 0 1px rgba(59, 130, 246, 0.35), inset 0 2px 2px 0 rgba(255, 255, 255, 1);
         }
 
         body {
-            /* Vibrant Royal Violet to Magenta Gradient with Geometric Dot Matrix Pattern (Exact Reference UI Kit) */
+            /* Vibrant Royal Violet to Magenta Gradient with Geometric Dot Matrix Pattern */
             background: 
                 radial-gradient(rgba(255, 255, 255, 0.18) 1.2px, transparent 1.2px),
                 linear-gradient(135deg, #2b144e 0%, #441a66 25%, #6a2375 55%, #942b70 80%, #b23568 100%);
             background-size: 24px 24px, 100% 100%;
             background-attachment: fixed;
-            color: #FFFFFF;
+            color: #0F172A;
             font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
             letter-spacing: -0.015em;
             -webkit-font-smoothing: antialiased;
@@ -62,17 +62,18 @@
             min-height: 100vh;
         }
 
-        /* Ultra-Glossy Glassmorphic Kanban Cards with Specular Highlight Reflection */
+        /* Luminous Frosted White Glass Kanban Cards with Bold Black Text */
         .kanban-card {
             position: relative;
             background: var(--glass-bg) !important;
-            backdrop-filter: blur(24px) saturate(200%) !important;
-            -webkit-backdrop-filter: blur(24px) saturate(200%) !important;
+            backdrop-filter: blur(28px) saturate(180%) !important;
+            -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
             border: 1px solid var(--glass-border) !important;
             box-shadow: var(--glass-shadow) !important;
             border-radius: 1.5rem !important; /* Bo tròn 24px mềm mại */
             transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, background 0.3s ease;
             overflow: hidden;
+            color: #0F172A !important;
         }
         .kanban-card:hover {
             transform: translateY(-5px) scale(1.008);
@@ -80,7 +81,7 @@
             border-color: var(--glass-border-hover) !important;
             background: var(--glass-bg-hover) !important;
         }
-        /* Top Specular Sheen Bar (Bóng sáng phản chiếu của kính chất lỏng) */
+        /* Top Specular Sheen Bar */
         .kanban-card::before {
             content: '';
             position: absolute;
@@ -88,7 +89,7 @@
             left: 0;
             right: 0;
             height: 38%;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
             border-top-left-radius: inherit;
             border-top-right-radius: inherit;
             pointer-events: none;
@@ -99,110 +100,142 @@
             z-index: 2;
         }
 
-        /* Glass Text Color Overrides for High Contrast */
+        /* BOLD BLACK TEXT & NUMBERS (ĐEN ĐẬM CHỮ VÀ SỐ CHO DỄ NHÌN) */
+        .kanban-card h2,
+        .kanban-card h3,
+        .kanban-card h4,
+        .kanban-card .font-extrabold,
+        .kanban-card .font-bold {
+            color: #0F172A !important;
+            font-weight: 800 !important;
+        }
         .kanban-card .text-slate-900,
         .kanban-card .text-slate-800,
         .kanban-card .text-slate-700 {
-            color: #FFFFFF !important;
+            color: #0F172A !important;
+            font-weight: 700 !important;
         }
         .kanban-card .text-slate-600,
-        .kanban-card .text-slate-500,
+        .kanban-card .text-slate-500 {
+            color: #1E293B !important;
+            font-weight: 600 !important;
+        }
         .kanban-card .text-slate-400 {
-            color: rgba(255, 255, 255, 0.75) !important;
+            color: #334155 !important;
+            font-weight: 600 !important;
         }
 
-        /* Inset Frosted Glass Stats Boxes */
+        /* ALL NUMBERS AND SCORES IN MAXIMUM CONTRAST BOLD BLACK */
+        #kpi-top1-score,
+        #kpi-top2-score,
+        #kpi-budget-total,
+        #kpi-retail-leads,
+        #gauge-center-pct,
+        .kanban-card .text-2xl,
+        .kanban-card .text-3xl,
+        .kanban-card .text-xl,
+        .kanban-card .font-black {
+            color: #000000 !important;
+            font-weight: 900 !important;
+            letter-spacing: -0.02em !important;
+        }
+
+        /* Inset Stats Boxes inside Cards */
         .kanban-card .bg-slate-50,
         .kanban-card .bg-slate-50\/90,
         .kanban-card .bg-slate-100 {
-            background: rgba(255, 255, 255, 0.09) !important;
-            border-color: rgba(255, 255, 255, 0.18) !important;
+            background: rgba(255, 255, 255, 0.72) !important;
+            border: 1px solid rgba(203, 213, 225, 0.8) !important;
             backdrop-filter: blur(14px) !important;
-            box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.35);
+            box-shadow: 0 2px 6px -1px rgba(15, 23, 42, 0.05), inset 0 1px 1px rgba(255, 255, 255, 0.95);
         }
         .kanban-card .border-slate-100,
         .kanban-card .border-slate-100\/90,
         .kanban-card .border-slate-200 {
-            border-color: rgba(255, 255, 255, 0.18) !important;
+            border-color: rgba(203, 213, 225, 0.85) !important;
         }
 
-        /* Header in Translucent Frosted Glass */
+        /* Progress Bar Comparison Labels in Bold Black */
+        .kanban-card .font-mono {
+            color: #000000 !important;
+            font-weight: 800 !important;
+        }
+        .kanban-card .bg-slate-100 {
+            background: rgba(226, 232, 240, 0.9) !important;
+        }
+
+        /* Header in Luminous Frosted Glass with Bold Black Typography */
         header {
-            background: rgba(255, 255, 255, 0.08) !important;
-            backdrop-filter: blur(28px) saturate(200%) !important;
-            -webkit-backdrop-filter: blur(28px) saturate(200%) !important;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.20) !important;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25) !important;
+            background: rgba(255, 255, 255, 0.88) !important;
+            backdrop-filter: blur(28px) saturate(180%) !important;
+            -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 8px 30px rgba(35, 15, 60, 0.15) !important;
         }
         header h2 {
-            color: #FFFFFF !important;
+            color: #0F172A !important;
+            font-weight: 900 !important;
         }
         header p {
-            color: rgba(255, 255, 255, 0.75) !important;
+            color: #334155 !important;
+            font-weight: 600 !important;
         }
         header input {
-            background: rgba(0, 0, 0, 0.25) !important;
-            border: 1px solid rgba(255, 255, 255, 0.3) !important;
-            color: #FFFFFF !important;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.35) !important;
+            background: rgba(248, 250, 252, 0.95) !important;
+            border: 1px solid rgba(203, 213, 225, 0.9) !important;
+            color: #0F172A !important;
+            font-weight: 600 !important;
+            box-shadow: inset 0 1px 3px rgba(15, 23, 42, 0.06) !important;
         }
         header input::placeholder {
-            color: rgba(255, 255, 255, 0.6) !important;
-        }
-        header input:focus {
-            background: rgba(0, 0, 0, 0.35) !important;
-            border-color: rgba(255, 255, 255, 0.6) !important;
+            color: #64748B !important;
+            font-weight: 500 !important;
         }
 
-        /* Glossy Pill Action Buttons (Matches UI Kit "LOGIN IN", "CONTACT", "DOWNLOAD") */
-        .glass-btn-primary {
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0.12) 100%) !important;
-            border: 1px solid rgba(255, 255, 255, 0.55) !important;
-            box-shadow: inset 0 1px 1.5px rgba(255, 255, 255, 0.9), 0 8px 20px rgba(0, 0, 0, 0.3) !important;
+        /* Header Action Buttons */
+        header .glass-btn-primary,
+        header button[onclick*="file-uploader"] {
+            background: linear-gradient(180deg, #2563EB 0%, #1D4ED8 100%) !important;
+            border: 1px solid rgba(255, 255, 255, 0.6) !important;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.6) !important;
             color: #FFFFFF !important;
-            font-weight: 700 !important;
-            backdrop-filter: blur(16px) !important;
-            transition: all 0.25s ease !important;
+            font-weight: 800 !important;
         }
-        .glass-btn-primary:hover {
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0.20) 100%) !important;
-            border-color: rgba(255, 255, 255, 0.85) !important;
-            box-shadow: inset 0 1.5px 2px rgba(255, 255, 255, 1), 0 12px 25px rgba(0, 0, 0, 0.4) !important;
-            transform: translateY(-2px);
+        header .glass-btn-primary:hover,
+        header button[onclick*="file-uploader"]:hover {
+            background: linear-gradient(180deg, #1D4ED8 0%, #1E40AF 100%) !important;
+            box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45) !important;
         }
-
-        .glass-btn-secondary {
-            background: rgba(255, 255, 255, 0.12) !important;
-            border: 1px solid rgba(255, 255, 255, 0.32) !important;
-            box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 4px 15px rgba(0, 0, 0, 0.2) !important;
-            color: #FFFFFF !important;
-            font-weight: 600 !important;
-            backdrop-filter: blur(16px) !important;
-            transition: all 0.25s ease !important;
+        header .glass-btn-secondary,
+        header button[onclick*="exportToCSV"] {
+            background: rgba(255, 255, 255, 0.9) !important;
+            border: 1px solid rgba(203, 213, 225, 0.9) !important;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06) !important;
+            color: #0F172A !important;
+            font-weight: 800 !important;
         }
-        .glass-btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.22) !important;
-            border-color: rgba(255, 255, 255, 0.6) !important;
-            box-shadow: inset 0 1px 1.5px rgba(255, 255, 255, 0.8), 0 8px 20px rgba(0, 0, 0, 0.3) !important;
-            transform: translateY(-2px);
+        header .glass-btn-secondary:hover,
+        header button[onclick*="exportToCSV"]:hover {
+            background: #FFFFFF !important;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1) !important;
         }
 
-        /* Collapsible Smooth Animated Sidebar (Mở ra khi di chuột, đóng lại bình thường) */
+        /* Sidebar in Luminous Glass with Bold Dark Navigation */
         aside.sidebar-collapsible {
             width: 4.75rem; /* ~76px */
             transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
             will-change: width;
             overflow: hidden;
-            background: rgba(255, 255, 255, 0.08) !important;
-            backdrop-filter: blur(28px) saturate(200%) !important;
-            -webkit-backdrop-filter: blur(28px) saturate(200%) !important;
-            border-right: 1px solid rgba(255, 255, 255, 0.18) !important;
-            box-shadow: 12px 0 35px rgba(0, 0, 0, 0.3) !important;
+            background: rgba(255, 255, 255, 0.88) !important;
+            backdrop-filter: blur(28px) saturate(180%) !important;
+            -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
+            border-right: 1px solid rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 10px 0 35px rgba(35, 15, 60, 0.15) !important;
         }
         aside.sidebar-collapsible:hover,
         aside.sidebar-collapsible.is-pinned {
             width: 17rem; /* ~272px */
-            box-shadow: 16px 0 45px rgba(0, 0, 0, 0.45) !important;
+            box-shadow: 14px 0 45px rgba(35, 15, 60, 0.22) !important;
         }
         .sidebar-text {
             opacity: 0;
@@ -220,46 +253,53 @@
             transition-delay: 0.06s;
         }
         aside.sidebar-collapsible .nav-item {
-            color: rgba(255, 255, 255, 0.75) !important;
+            color: #334155 !important;
+            font-weight: 700 !important;
         }
         aside.sidebar-collapsible .nav-item:hover {
-            color: #FFFFFF !important;
-            background: rgba(255, 255, 255, 0.12) !important;
+            color: #0F172A !important;
+            background: rgba(241, 245, 249, 0.9) !important;
         }
         aside.sidebar-collapsible .nav-item.active {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.12) 100%) !important;
-            border: 1px solid rgba(255, 255, 255, 0.55) !important;
-            color: #FFFFFF !important;
-            box-shadow: inset 0 1px 1.5px rgba(255, 255, 255, 0.8), 0 4px 15px rgba(0, 0, 0, 0.2) !important;
-            font-weight: 700;
+            background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%) !important;
+            border: 1px solid #93C5FD !important;
+            color: #1D4ED8 !important;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15) !important;
+            font-weight: 800 !important;
         }
         aside.sidebar-collapsible .nav-item.active i {
-            color: #FFFFFF !important;
+            color: #1D4ED8 !important;
         }
         aside.sidebar-collapsible h1 {
-            color: #FFFFFF !important;
+            color: #0F172A !important;
+            font-weight: 900 !important;
+        }
+        aside.sidebar-collapsible p {
+            color: #475569 !important;
+            font-weight: 700 !important;
         }
 
-        /* Soft Rounded Glass Tables with Zero Sharp Edges */
+        /* Soft Rounded Glass Tables with Bold Dark Data */
         .table-rounded-container {
             border-radius: 1.5rem !important; /* Bo tròn 24px hoàn toàn */
             overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.25) !important;
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.6) !important;
-            background: rgba(255, 255, 255, 0.08) !important;
-            backdrop-filter: blur(24px) saturate(200%) !important;
-            -webkit-backdrop-filter: blur(24px) saturate(200%) !important;
+            border: 1px solid rgba(255, 255, 255, 0.9) !important;
+            box-shadow: 0 16px 36px rgba(35, 15, 60, 0.18), inset 0 1px 1px rgba(255, 255, 255, 1) !important;
+            background: rgba(255, 255, 255, 0.88) !important;
+            backdrop-filter: blur(28px) saturate(180%) !important;
+            -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
         }
         .table-rounded-container table {
             border-collapse: separate;
             border-spacing: 0;
         }
         .table-rounded-container thead {
-            background: rgba(255, 255, 255, 0.14) !important;
+            background: rgba(241, 245, 249, 0.95) !important;
         }
         .table-rounded-container thead tr th {
-            color: #FFFFFF !important;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
+            color: #0F172A !important;
+            font-weight: 800 !important;
+            border-bottom: 2px solid rgba(203, 213, 225, 0.9) !important;
         }
         .table-rounded-container table thead tr th:first-child {
             border-top-left-radius: 1.5rem;
@@ -274,70 +314,99 @@
             border-bottom-right-radius: 1.5rem;
         }
         .table-rounded-container tbody tr {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-            color: rgba(255, 255, 255, 0.92) !important;
+            border-bottom: 1px solid rgba(226, 232, 240, 0.85) !important;
+            color: #0F172A !important;
             transition: background-color 0.18s ease;
         }
         .table-rounded-container tbody tr:hover {
-            background-color: rgba(255, 255, 255, 0.14) !important;
+            background-color: rgba(239, 246, 255, 0.8) !important;
         }
         .table-rounded-container tbody td {
-            color: rgba(255, 255, 255, 0.92) !important;
+            color: #0F172A !important;
+            font-weight: 600 !important;
+        }
+        .table-rounded-container tbody td.font-bold,
+        .table-rounded-container tbody td.font-mono {
+            color: #000000 !important;
+            font-weight: 800 !important;
         }
 
-        /* Glowing Neon Glass Badges */
-        .badge-neon-emerald {
-            background: rgba(16, 185, 129, 0.25) !important;
-            border: 1px solid rgba(52, 211, 153, 0.5) !important;
-            color: #6EE7B7 !important;
-            box-shadow: 0 0 12px rgba(52, 211, 153, 0.25);
+        /* High-Contrast Badges */
+        .badge-neon-emerald,
+        .bg-emerald-50 {
+            background: #ECFDF5 !important;
+            border: 1px solid #6EE7B7 !important;
+            color: #065F46 !important;
+            font-weight: 800 !important;
         }
-        .badge-neon-cyan {
-            background: rgba(56, 189, 248, 0.25) !important;
-            border: 1px solid rgba(56, 189, 248, 0.5) !important;
-            color: #BAE6FD !important;
-            box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
+        .badge-neon-cyan,
+        .bg-blue-50 {
+            background: #EFF6FF !important;
+            border: 1px solid #93C5FD !important;
+            color: #1E40AF !important;
+            font-weight: 800 !important;
         }
-        .badge-neon-rose {
-            background: rgba(244, 63, 94, 0.25) !important;
-            border: 1px solid rgba(251, 113, 133, 0.5) !important;
-            color: #FECDD3 !important;
-            box-shadow: 0 0 12px rgba(244, 63, 94, 0.25);
+        .badge-neon-rose,
+        .bg-red-50 {
+            background: #FFF1F2 !important;
+            border: 1px solid #FECDD3 !important;
+            color: #9F1239 !important;
+            font-weight: 800 !important;
         }
-        .badge-neon-amber {
-            background: rgba(245, 158, 11, 0.25) !important;
-            border: 1px solid rgba(251, 191, 36, 0.5) !important;
-            color: #FDE68A !important;
-            box-shadow: 0 0 12px rgba(245, 158, 11, 0.25);
+        .badge-neon-amber,
+        .bg-amber-50 {
+            background: #FFFBEB !important;
+            border: 1px solid #FDE68A !important;
+            color: #92400E !important;
+            font-weight: 800 !important;
         }
 
         /* Minimalist Glass Dropzone */
         #empty-state-banner {
-            border: 2px dashed rgba(255, 255, 255, 0.35) !important;
+            background: rgba(255, 255, 255, 0.78) !important;
+            border: 2px dashed rgba(59, 130, 246, 0.5) !important;
         }
         #empty-state-banner:hover {
-            border-color: rgba(56, 189, 248, 0.8) !important;
-            background: rgba(255, 255, 255, 0.12) !important;
+            border-color: #2563EB !important;
+            background: rgba(255, 255, 255, 0.92) !important;
+        }
+        #empty-state-banner h3 {
+            color: #0F172A !important;
+            font-weight: 900 !important;
+        }
+        #empty-state-banner p {
+            color: #334155 !important;
+            font-weight: 600 !important;
         }
 
         /* Active State Bar */
         #active-state-bar {
-            background: rgba(16, 185, 129, 0.18) !important;
-            border: 1px solid rgba(52, 211, 153, 0.45) !important;
+            background: rgba(236, 253, 245, 0.92) !important;
+            border: 1px solid #6EE7B7 !important;
+        }
+        #active-state-bar span,
+        #active-state-bar p {
+            color: #064E3B !important;
+            font-weight: 700 !important;
         }
 
-        /* Modals in Dark Glassmorphism */
+        /* Modals in Clear Luminous Frosted Glass */
         #schema-modal > div > div,
         #error-modal > div > div {
-            background: linear-gradient(135deg, rgba(35, 20, 60, 0.95) 0%, rgba(55, 25, 80, 0.95) 100%) !important;
+            background: rgba(255, 255, 255, 0.96) !important;
             backdrop-filter: blur(32px) saturate(200%) !important;
             -webkit-backdrop-filter: blur(32px) saturate(200%) !important;
-            border: 1px solid rgba(255, 255, 255, 0.35) !important;
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), inset 0 1.5px 1.5px rgba(255, 255, 255, 0.6) !important;
-            color: #FFFFFF !important;
+            border: 1px solid rgba(203, 213, 225, 0.9) !important;
+            box-shadow: 0 30px 80px rgba(15, 23, 42, 0.35) !important;
+            color: #0F172A !important;
         }
         #schema-modal h3, #error-modal h3 {
-            color: #FFFFFF !important;
+            color: #0F172A !important;
+            font-weight: 900 !important;
+        }
+        #schema-modal p, #error-modal p {
+            color: #334155 !important;
+            font-weight: 600 !important;
         }
 
         .custom-scrollbar::-webkit-scrollbar {
@@ -345,11 +414,11 @@
             height: 6px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: rgba(255, 255, 255, 0.3);
+            background: rgba(148, 163, 184, 0.6);
             border-radius: 9999px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: rgba(255, 255, 255, 0.5);
+            background: rgba(100, 116, 139, 0.8);
         }
 
         .drag-overlay {
