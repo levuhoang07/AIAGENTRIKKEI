@@ -326,3 +326,4 @@ if "toggleSidebarPin" not in content:
 INDEX_HTML.write_text(content, encoding="utf-8")
 ROOT_HTML.write_text(content, encoding="utf-8")
 print("SUCCESS: Both public/index.html and AI301_Executive_Integrated_Dashboard.html upgraded to v4.1!")
+

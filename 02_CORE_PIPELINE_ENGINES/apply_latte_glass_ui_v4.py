@@ -1406,3 +1406,4 @@ HTML_V4 = """<!DOCTYPE html>
 INDEX_HTML.write_text(HTML_V4, encoding="utf-8")
 ROOT_HTML.write_text(HTML_V4, encoding="utf-8")
 print("SUCCESS: Masterwork Latte & Espresso Glass UI v4.0 generated successfully!")
+
