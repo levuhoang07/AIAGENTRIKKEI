@@ -37,6 +37,7 @@ venv.bak/
 .idea/
 .DS_Store
 Thumbs.db
+~$*
 
 # Vercel output
 .vercel/
