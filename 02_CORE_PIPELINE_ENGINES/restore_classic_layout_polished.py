@@ -218,3 +218,4 @@ if "toggleSidebarPin" not in html:
 INDEX_HTML.write_text(html, encoding="utf-8")
 ROOT_HTML.write_text(html, encoding="utf-8")
 print("SUCCESS: Restored classic layout with polished visuals (Plus Jakarta Sans, frosted glass, rounded cards, animated sidebar)!")
+
