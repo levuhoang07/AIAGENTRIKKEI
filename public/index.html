@@ -39,12 +39,13 @@
     </script>
     <style>
         :root {
-            --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.86) 0%, rgba(255, 255, 255, 0.74) 100%);
-            --glass-bg-hover: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.84) 100%);
-            --glass-border: rgba(255, 255, 255, 0.95);
-            --glass-border-hover: rgba(59, 130, 246, 0.65);
-            --glass-shadow: 0 16px 36px -8px rgba(35, 15, 60, 0.22), inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 1), inset 0 -1px 1px 0 rgba(255, 255, 255, 0.4);
-            --glass-shadow-hover: 0 24px 50px -10px rgba(35, 15, 60, 0.32), 0 0 0 1px rgba(59, 130, 246, 0.35), inset 0 2px 2px 0 rgba(255, 255, 255, 1);
+            /* Balanced Translucent Frosted Glass (Không bị quá trắng, trong suốt phản chiếu nền) */
+            --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.30) 100%);
+            --glass-bg-hover: linear-gradient(135deg, rgba(255, 255, 255, 0.62) 0%, rgba(255, 255, 255, 0.40) 100%);
+            --glass-border: rgba(255, 255, 255, 0.60);
+            --glass-border-hover: rgba(255, 255, 255, 0.85);
+            --glass-shadow: 0 16px 40px -10px rgba(25, 10, 45, 0.30), inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.75), inset 0 -1px 1px 0 rgba(255, 255, 255, 0.25);
+            --glass-shadow-hover: 0 24px 50px -10px rgba(25, 10, 45, 0.40), 0 0 0 1px rgba(255, 255, 255, 0.5), inset 0 2px 2px 0 rgba(255, 255, 255, 0.9);
         }
 
         body {
@@ -62,12 +63,12 @@
             min-height: 100vh;
         }
 
-        /* Luminous Frosted White Glass Kanban Cards with Bold Black Text */
+        /* Translucent Frosted Glass Kanban Cards */
         .kanban-card {
             position: relative;
             background: var(--glass-bg) !important;
-            backdrop-filter: blur(28px) saturate(180%) !important;
-            -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
+            backdrop-filter: blur(24px) saturate(190%) !important;
+            -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
             border: 1px solid var(--glass-border) !important;
             box-shadow: var(--glass-shadow) !important;
             border-radius: 1.5rem !important; /* Bo tròn 24px mềm mại */
@@ -89,7 +90,7 @@
             left: 0;
             right: 0;
             height: 38%;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
             border-top-left-radius: inherit;
             border-top-right-radius: inherit;
             pointer-events: none;
@@ -100,20 +101,22 @@
             z-index: 2;
         }
 
-        /* BOLD BLACK TEXT & NUMBERS (ĐEN ĐẬM CHỮ VÀ SỐ CHO DỄ NHÌN) */
+        /* BOLD BLACK TEXT & NUMBERS (ĐEN ĐẬM DỄ ĐỌC TRÊN NỀN KÍNH TRONG SUỐT) */
         .kanban-card h2,
         .kanban-card h3,
         .kanban-card h4,
         .kanban-card .font-extrabold,
         .kanban-card .font-bold {
-            color: #0F172A !important;
+            color: #000000 !important;
             font-weight: 800 !important;
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
         }
         .kanban-card .text-slate-900,
         .kanban-card .text-slate-800,
         .kanban-card .text-slate-700 {
             color: #0F172A !important;
             font-weight: 700 !important;
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.35);
         }
         .kanban-card .text-slate-600,
         .kanban-card .text-slate-500 {
@@ -138,21 +141,22 @@
             color: #000000 !important;
             font-weight: 900 !important;
             letter-spacing: -0.02em !important;
+            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
         }
 
-        /* Inset Stats Boxes inside Cards */
+        /* Inset Frosted Stats Boxes inside Cards (Trong suốt nhẹ nhàng) */
         .kanban-card .bg-slate-50,
         .kanban-card .bg-slate-50\/90,
         .kanban-card .bg-slate-100 {
-            background: rgba(255, 255, 255, 0.72) !important;
-            border: 1px solid rgba(203, 213, 225, 0.8) !important;
+            background: rgba(255, 255, 255, 0.38) !important;
+            border: 1px solid rgba(255, 255, 255, 0.50) !important;
             backdrop-filter: blur(14px) !important;
-            box-shadow: 0 2px 6px -1px rgba(15, 23, 42, 0.05), inset 0 1px 1px rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 8px -1px rgba(25, 10, 45, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.7);
         }
         .kanban-card .border-slate-100,
         .kanban-card .border-slate-100\/90,
         .kanban-card .border-slate-200 {
-            border-color: rgba(203, 213, 225, 0.85) !important;
+            border-color: rgba(255, 255, 255, 0.50) !important;
         }
 
         /* Progress Bar Comparison Labels in Bold Black */
@@ -161,81 +165,82 @@
             font-weight: 800 !important;
         }
         .kanban-card .bg-slate-100 {
-            background: rgba(226, 232, 240, 0.9) !important;
+            background: rgba(255, 255, 255, 0.35) !important;
         }
 
-        /* Header in Luminous Frosted Glass with Bold Black Typography */
+        /* Header in Translucent Frosted Glass */
         header {
-            background: rgba(255, 255, 255, 0.88) !important;
+            background: rgba(255, 255, 255, 0.55) !important;
             backdrop-filter: blur(28px) saturate(180%) !important;
             -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.95) !important;
-            box-shadow: 0 8px 30px rgba(35, 15, 60, 0.15) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.65) !important;
+            box-shadow: 0 8px 30px rgba(25, 10, 45, 0.20) !important;
         }
         header h2 {
-            color: #0F172A !important;
+            color: #000000 !important;
             font-weight: 900 !important;
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
         }
         header p {
-            color: #334155 !important;
+            color: #1E293B !important;
             font-weight: 600 !important;
         }
         header input {
-            background: rgba(248, 250, 252, 0.95) !important;
-            border: 1px solid rgba(203, 213, 225, 0.9) !important;
-            color: #0F172A !important;
-            font-weight: 600 !important;
-            box-shadow: inset 0 1px 3px rgba(15, 23, 42, 0.06) !important;
+            background: rgba(255, 255, 255, 0.55) !important;
+            border: 1px solid rgba(255, 255, 255, 0.7) !important;
+            color: #000000 !important;
+            font-weight: 700 !important;
+            box-shadow: inset 0 1px 3px rgba(15, 23, 42, 0.08) !important;
         }
         header input::placeholder {
-            color: #64748B !important;
-            font-weight: 500 !important;
+            color: #475569 !important;
+            font-weight: 600 !important;
         }
 
         /* Header Action Buttons */
         header .glass-btn-primary,
         header button[onclick*="file-uploader"] {
             background: linear-gradient(180deg, #2563EB 0%, #1D4ED8 100%) !important;
-            border: 1px solid rgba(255, 255, 255, 0.6) !important;
-            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.6) !important;
+            border: 1px solid rgba(255, 255, 255, 0.7) !important;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.7) !important;
             color: #FFFFFF !important;
             font-weight: 800 !important;
         }
         header .glass-btn-primary:hover,
         header button[onclick*="file-uploader"]:hover {
             background: linear-gradient(180deg, #1D4ED8 0%, #1E40AF 100%) !important;
-            box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45) !important;
+            box-shadow: 0 6px 18px rgba(37, 99, 235, 0.5) !important;
         }
         header .glass-btn-secondary,
         header button[onclick*="exportToCSV"] {
-            background: rgba(255, 255, 255, 0.9) !important;
-            border: 1px solid rgba(203, 213, 225, 0.9) !important;
-            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06) !important;
-            color: #0F172A !important;
+            background: rgba(255, 255, 255, 0.60) !important;
+            border: 1px solid rgba(255, 255, 255, 0.75) !important;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.8) !important;
+            color: #000000 !important;
             font-weight: 800 !important;
         }
         header .glass-btn-secondary:hover,
         header button[onclick*="exportToCSV"]:hover {
-            background: #FFFFFF !important;
-            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1) !important;
+            background: rgba(255, 255, 255, 0.80) !important;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12) !important;
         }
 
-        /* Sidebar in Luminous Glass with Bold Dark Navigation */
+        /* Sidebar in Translucent Glass */
         aside.sidebar-collapsible {
             width: 4.75rem; /* ~76px */
             transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
             will-change: width;
             overflow: hidden;
-            background: rgba(255, 255, 255, 0.88) !important;
+            background: rgba(255, 255, 255, 0.55) !important;
             backdrop-filter: blur(28px) saturate(180%) !important;
             -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
-            border-right: 1px solid rgba(255, 255, 255, 0.95) !important;
-            box-shadow: 10px 0 35px rgba(35, 15, 60, 0.15) !important;
+            border-right: 1px solid rgba(255, 255, 255, 0.65) !important;
+            box-shadow: 10px 0 35px rgba(25, 10, 45, 0.20) !important;
         }
         aside.sidebar-collapsible:hover,
         aside.sidebar-collapsible.is-pinned {
             width: 17rem; /* ~272px */
-            box-shadow: 14px 0 45px rgba(35, 15, 60, 0.22) !important;
+            box-shadow: 14px 0 45px rgba(25, 10, 45, 0.30) !important;
         }
         .sidebar-text {
             opacity: 0;
@@ -253,39 +258,39 @@
             transition-delay: 0.06s;
         }
         aside.sidebar-collapsible .nav-item {
-            color: #334155 !important;
+            color: #1E293B !important;
             font-weight: 700 !important;
         }
         aside.sidebar-collapsible .nav-item:hover {
-            color: #0F172A !important;
-            background: rgba(241, 245, 249, 0.9) !important;
+            color: #000000 !important;
+            background: rgba(255, 255, 255, 0.45) !important;
         }
         aside.sidebar-collapsible .nav-item.active {
-            background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%) !important;
-            border: 1px solid #93C5FD !important;
+            background: rgba(255, 255, 255, 0.75) !important;
+            border: 1px solid rgba(255, 255, 255, 0.9) !important;
             color: #1D4ED8 !important;
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15) !important;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.18), inset 0 1px 1px rgba(255, 255, 255, 0.9) !important;
             font-weight: 800 !important;
         }
         aside.sidebar-collapsible .nav-item.active i {
             color: #1D4ED8 !important;
         }
         aside.sidebar-collapsible h1 {
-            color: #0F172A !important;
+            color: #000000 !important;
             font-weight: 900 !important;
         }
         aside.sidebar-collapsible p {
-            color: #475569 !important;
+            color: #334155 !important;
             font-weight: 700 !important;
         }
 
-        /* Soft Rounded Glass Tables with Bold Dark Data */
+        /* Translucent Glass Tables */
         .table-rounded-container {
             border-radius: 1.5rem !important; /* Bo tròn 24px hoàn toàn */
             overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.9) !important;
-            box-shadow: 0 16px 36px rgba(35, 15, 60, 0.18), inset 0 1px 1px rgba(255, 255, 255, 1) !important;
-            background: rgba(255, 255, 255, 0.88) !important;
+            border: 1px solid rgba(255, 255, 255, 0.65) !important;
+            box-shadow: 0 16px 36px rgba(25, 10, 45, 0.22), inset 0 1px 1px rgba(255, 255, 255, 0.8) !important;
+            background: rgba(255, 255, 255, 0.52) !important;
             backdrop-filter: blur(28px) saturate(180%) !important;
             -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
         }
@@ -294,12 +299,12 @@
             border-spacing: 0;
         }
         .table-rounded-container thead {
-            background: rgba(241, 245, 249, 0.95) !important;
+            background: rgba(255, 255, 255, 0.45) !important;
         }
         .table-rounded-container thead tr th {
-            color: #0F172A !important;
+            color: #000000 !important;
             font-weight: 800 !important;
-            border-bottom: 2px solid rgba(203, 213, 225, 0.9) !important;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.6) !important;
         }
         .table-rounded-container table thead tr th:first-child {
             border-top-left-radius: 1.5rem;
@@ -314,12 +319,12 @@
             border-bottom-right-radius: 1.5rem;
         }
         .table-rounded-container tbody tr {
-            border-bottom: 1px solid rgba(226, 232, 240, 0.85) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.35) !important;
             color: #0F172A !important;
             transition: background-color 0.18s ease;
         }
         .table-rounded-container tbody tr:hover {
-            background-color: rgba(239, 246, 255, 0.8) !important;
+            background-color: rgba(255, 255, 255, 0.35) !important;
         }
         .table-rounded-container tbody td {
             color: #0F172A !important;
@@ -334,78 +339,78 @@
         /* High-Contrast Badges */
         .badge-neon-emerald,
         .bg-emerald-50 {
-            background: #ECFDF5 !important;
-            border: 1px solid #6EE7B7 !important;
-            color: #065F46 !important;
+            background: rgba(209, 250, 229, 0.85) !important;
+            border: 1px solid #34D399 !important;
+            color: #064E3B !important;
             font-weight: 800 !important;
         }
         .badge-neon-cyan,
         .bg-blue-50 {
-            background: #EFF6FF !important;
-            border: 1px solid #93C5FD !important;
-            color: #1E40AF !important;
+            background: rgba(219, 234, 254, 0.85) !important;
+            border: 1px solid #60A5FA !important;
+            color: #1E3A8A !important;
             font-weight: 800 !important;
         }
         .badge-neon-rose,
         .bg-red-50 {
-            background: #FFF1F2 !important;
-            border: 1px solid #FECDD3 !important;
-            color: #9F1239 !important;
+            background: rgba(255, 228, 230, 0.85) !important;
+            border: 1px solid #FB7185 !important;
+            color: #881337 !important;
             font-weight: 800 !important;
         }
         .badge-neon-amber,
         .bg-amber-50 {
-            background: #FFFBEB !important;
-            border: 1px solid #FDE68A !important;
-            color: #92400E !important;
+            background: rgba(254, 243, 199, 0.85) !important;
+            border: 1px solid #FBBF24 !important;
+            color: #78350F !important;
             font-weight: 800 !important;
         }
 
         /* Minimalist Glass Dropzone */
         #empty-state-banner {
-            background: rgba(255, 255, 255, 0.78) !important;
-            border: 2px dashed rgba(59, 130, 246, 0.5) !important;
+            background: rgba(255, 255, 255, 0.45) !important;
+            border: 2px dashed rgba(255, 255, 255, 0.7) !important;
         }
         #empty-state-banner:hover {
             border-color: #2563EB !important;
-            background: rgba(255, 255, 255, 0.92) !important;
+            background: rgba(255, 255, 255, 0.65) !important;
         }
         #empty-state-banner h3 {
-            color: #0F172A !important;
+            color: #000000 !important;
             font-weight: 900 !important;
         }
         #empty-state-banner p {
-            color: #334155 !important;
+            color: #1E293B !important;
             font-weight: 600 !important;
         }
 
         /* Active State Bar */
         #active-state-bar {
-            background: rgba(236, 253, 245, 0.92) !important;
-            border: 1px solid #6EE7B7 !important;
+            background: rgba(209, 250, 229, 0.85) !important;
+            border: 1px solid #34D399 !important;
         }
         #active-state-bar span,
         #active-state-bar p {
             color: #064E3B !important;
-            font-weight: 700 !important;
+            font-weight: 800 !important;
         }
 
-        /* Modals in Clear Luminous Frosted Glass */
+        /* Modals in Balanced Frosted Glass */
         #schema-modal > div > div,
         #error-modal > div > div {
-            background: rgba(255, 255, 255, 0.96) !important;
+            background: rgba(255, 255, 255, 0.90) !important;
             backdrop-filter: blur(32px) saturate(200%) !important;
             -webkit-backdrop-filter: blur(32px) saturate(200%) !important;
-            border: 1px solid rgba(203, 213, 225, 0.9) !important;
+            border: 1px solid rgba(255, 255, 255, 0.9) !important;
             box-shadow: 0 30px 80px rgba(15, 23, 42, 0.35) !important;
             color: #0F172A !important;
         }
         #schema-modal h3, #error-modal h3 {
-            color: #0F172A !important;
+            color: #000000 !important;
             font-weight: 900 !important;
         }
         #schema-modal p, #error-modal p {
-            color: #334155 !important;
+            color: #1E293B !important;
             font-weight: 600 !important;
         }
 
@@ -414,11 +419,11 @@
             height: 6px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: rgba(148, 163, 184, 0.6);
+            background: rgba(255, 255, 255, 0.5);
             border-radius: 9999px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: rgba(100, 116, 139, 0.8);
+            background: rgba(255, 255, 255, 0.8);
         }
 
         .drag-overlay {
