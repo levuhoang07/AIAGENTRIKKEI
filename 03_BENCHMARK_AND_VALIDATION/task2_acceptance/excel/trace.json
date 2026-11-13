@@ -1,0 +1,35 @@
+[
+  {
+    "action": "call",
+    "tool": "collect_workbook",
+    "path": "C:\\Users\\Admin\\Downloads\\AI301_De04_Du_Lieu_Mau_1000_Leads_Cleaned.xlsx"
+  },
+  {
+    "action": "complete",
+    "tool": "collect_workbook",
+    "sha256": "7294d3993e40dc550d56c5473c48a390a90d965808c3f70b5fafa4c853abea32",
+    "sheet": "Dữ liệu nguồn ",
+    "records": 1000
+  },
+  {
+    "action": "call",
+    "tool": "evaluate_workbook"
+  },
+  {
+    "action": "complete",
+    "tool": "evaluate_workbook",
+    "status": "needs_rules_and_evidence"
+  },
+  {
+    "action": "success",
+    "outputs": [
+      "report.md",
+      "comparison.json"
+    ],
+    "recorded_proposal": [
+      "DB-01",
+      "DB-02"
+    ],
+    "survey_status": "incomplete"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "areas": [
+    "DB-01",
+    "DB-02",
+    "DB-03",
+    "DB-04"
+  ],
+  "documents": [
+    "facts.json"
+  ]
+}

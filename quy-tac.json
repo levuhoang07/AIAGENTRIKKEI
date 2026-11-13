@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0-hungphat-official",
+  "metrics": {
+    "fit_score": {
+      "operator": ">=",
+      "threshold": 3.5,
+      "weight": 35.0,
+      "unit": "pts",
+      "period": "2024",
+      "kinds": [
+        "product"
+      ],
+      "gate": true
+    },
+    "sla_response_time": {
+      "operator": "<=",
+      "threshold": 2.0,
+      "weight": 30.0,
+      "unit": "h",
+      "period": "2024",
+      "kinds": [
+        "capacity"
+      ],
+      "gate": true
+    },
+    "scale_score": {
+      "operator": ">=",
+      "threshold": 3.5,
+      "weight": 20.0,
+      "unit": "pts",
+      "period": "2024",
+      "kinds": [
+        "market"
+      ]
+    },
+    "competition_score": {
+      "operator": ">=",
+      "threshold": 3.0,
+      "weight": 15.0,
+      "unit": "pts",
+      "period": "2024",
+      "kinds": [
+        "competitor"
+      ]
+    }
+  },
+  "survey": {
+    "DB-01": {
+      "group": "Chuỗi Bán lẻ Điện máy, Nông sản & Siêu thị Tiện lợi Đông Nam Bộ",
+      "verify": "Nhu cầu quản trị tồn kho đa kênh, đồng bộ thời gian thực giữa kho và chuỗi cửa hàng",
+      "owner": "Trưởng phòng Phát triển Kinh doanh & Chuyên viên Tư vấn Giải pháp WMS"
+    },
+    "DB-02": {
+      "group": "Chuỗi Bán lẻ Nông sản tươi, Thực phẩm sạch & Nhà thuốc Tây Nam Bộ",
+      "verify": "Yêu cầu quản lý hạn sử dụng (Date), truy xuất lô sản phẩm và kết nối chi nhánh Cần Thơ",
+      "owner": "Trưởng nhóm Phát triển Kinh doanh Chi nhánh Cần Thơ"
+    },
+    "DB-03": {
+      "group": "Chuỗi Bán lẻ Du lịch & Mini-mart Nam Trung Bộ",
+      "verify": "Khả năng chuyển đổi sang mô hình Cloud WMS hỗ trợ từ xa thay vì on-site 2h",
+      "owner": "Chuyên viên Quản lý Đối tác Kỹ thuật"
+    },
+    "DB-04": {
+      "group": "Hộ kinh doanh Cá thể & Đại lý Thu mua Tây Nguyên",
+      "verify": "Thời điểm hoàn tất chuyển đổi số và nâng cấp lên mô hình kho chuẩn",
+      "owner": "Chuyên viên Nghiên cứu Thị trường"
+    }
+  }
+}

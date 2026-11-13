@@ -1,0 +1,78 @@
+{
+  "version": "synthetic-only",
+  "metrics": {
+    "criterion_1": {
+      "operator": ">=",
+      "threshold": 1,
+      "weight": 1,
+      "unit": "flag",
+      "period": "fixture",
+      "kinds": [
+        "market"
+      ]
+    },
+    "criterion_2": {
+      "operator": ">=",
+      "threshold": 1,
+      "weight": 1,
+      "unit": "flag",
+      "period": "fixture",
+      "kinds": [
+        "market"
+      ]
+    },
+    "criterion_3": {
+      "operator": ">=",
+      "threshold": 1,
+      "weight": 1,
+      "unit": "flag",
+      "period": "fixture",
+      "kinds": [
+        "market"
+      ]
+    },
+    "criterion_4": {
+      "operator": ">=",
+      "threshold": 1,
+      "weight": 1,
+      "unit": "flag",
+      "period": "fixture",
+      "kinds": [
+        "market"
+      ]
+    },
+    "hours": {
+      "operator": "<=",
+      "threshold": 2,
+      "weight": 1,
+      "unit": "h",
+      "period": "fixture",
+      "kinds": [
+        "capacity"
+      ],
+      "gate": true
+    }
+  },
+  "survey": {
+    "A": {
+      "group": "Synthetic retail chains",
+      "verify": "On-site response time",
+      "owner": "Deployment team"
+    },
+    "B": {
+      "group": "Synthetic retail chains",
+      "verify": "On-site response time",
+      "owner": "Deployment team"
+    },
+    "C": {
+      "group": "Synthetic retail chains",
+      "verify": "On-site response time",
+      "owner": "Deployment team"
+    },
+    "D": {
+      "group": "Synthetic retail chains",
+      "verify": "On-site response time",
+      "owner": "Deployment team"
+    }
+  }
+}

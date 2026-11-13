@@ -1,0 +1,45 @@
+{
+  "normal": {
+    "expected": [
+      "A",
+      "B"
+    ],
+    "actual": [
+      "A",
+      "B"
+    ],
+    "status": "pass"
+  },
+  "missing": {
+    "expected": [],
+    "actual": [],
+    "status": "pass"
+  },
+  "boundary": {
+    "expected": [
+      "A",
+      "B"
+    ],
+    "actual": [
+      "A",
+      "B"
+    ],
+    "status": "pass"
+  },
+  "conflict": {
+    "expected": [],
+    "actual": [],
+    "status": "pass"
+  },
+  "new_input": {
+    "expected": [
+      "D",
+      "B"
+    ],
+    "actual": [
+      "D",
+      "B"
+    ],
+    "status": "pass"
+  }
+}

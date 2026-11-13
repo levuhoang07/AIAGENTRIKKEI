@@ -1,0 +1,101 @@
+[
+  {
+    "action": "read",
+    "path": "C:\\Users\\Admin\\Downloads\\ANTIGRAVITY_AI_TRAINING_PACKAGE\\03_BENCHMARK_AND_VALIDATION\\task2_reaudit\\stale_input\\manifest.json",
+    "sha256": "425a4c66f6e6472d68fb5ad6928cb1fa5a41170eddd3d1438d9923e9c82a6dee"
+  },
+  {
+    "action": "read",
+    "path": "03_BENCHMARK_AND_VALIDATION\\task2_reaudit\\stale_input\\rules.json",
+    "sha256": "1bfd4e43da3711bbfbce35fc1283150474ff21545461ee258ba0a4343d4b5160"
+  },
+  {
+    "action": "call",
+    "tool": "collect"
+  },
+  {
+    "action": "read",
+    "path": "C:\\Users\\Admin\\Downloads\\ANTIGRAVITY_AI_TRAINING_PACKAGE\\03_BENCHMARK_AND_VALIDATION\\task2_reaudit\\stale_input\\facts.json",
+    "sha256": "54f011ffa4071407ca7db1bb04dfc158e7530ea23aa5bf5af1c691abff9b6846"
+  },
+  {
+    "action": "exclude_observation",
+    "area": "B",
+    "metric": "hours",
+    "reason": "unit_or_period_mismatch",
+    "file": "facts.json",
+    "record": 10
+  },
+  {
+    "action": "duplicate",
+    "area": "A",
+    "metric": "criterion_1",
+    "evidence": {
+      "value": 1,
+      "source": "SYNTHETIC-A-market",
+      "period": "fixture",
+      "locator": "row 1",
+      "file": "facts.json",
+      "record": 21
+    }
+  },
+  {
+    "action": "duplicate",
+    "area": "A",
+    "metric": "criterion_2",
+    "evidence": {
+      "value": 1,
+      "source": "SYNTHETIC-A-market",
+      "period": "fixture",
+      "locator": "row 1",
+      "file": "facts.json",
+      "record": 21
+    }
+  },
+  {
+    "action": "duplicate",
+    "area": "A",
+    "metric": "criterion_3",
+    "evidence": {
+      "value": 1,
+      "source": "SYNTHETIC-A-market",
+      "period": "fixture",
+      "locator": "row 1",
+      "file": "facts.json",
+      "record": 21
+    }
+  },
+  {
+    "action": "duplicate",
+    "area": "A",
+    "metric": "criterion_4",
+    "evidence": {
+      "value": 1,
+      "source": "SYNTHETIC-A-market",
+      "period": "fixture",
+      "locator": "row 1",
+      "file": "facts.json",
+      "record": 21
+    }
+  },
+  {
+    "action": "complete",
+    "tool": "collect"
+  },
+  {
+    "action": "call",
+    "tool": "evaluate"
+  },
+  {
+    "action": "complete",
+    "tool": "evaluate",
+    "selected": []
+  },
+  {
+    "action": "success",
+    "outputs": [
+      "report.md",
+      "comparison.json"
+    ]
+  }
+]

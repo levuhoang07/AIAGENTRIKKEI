@@ -1,0 +1,77 @@
+[
+  {
+    "action": "read",
+    "path": "C:\\Users\\Admin\\Downloads\\ANTIGRAVITY_AI_TRAINING_PACKAGE\\03_BENCHMARK_AND_VALIDATION\\task2_reaudit\\missing_file_input\\manifest.json",
+    "sha256": "5ecedb25107dcea807b13581a5a362ab0de9df039cb9be433f820ca7da552e0e"
+  },
+  {
+    "action": "read",
+    "path": "03_BENCHMARK_AND_VALIDATION\\task2_reaudit\\missing_file_input\\rules.json",
+    "sha256": "1bfd4e43da3711bbfbce35fc1283150474ff21545461ee258ba0a4343d4b5160"
+  },
+  {
+    "action": "call",
+    "tool": "collect"
+  },
+  {
+    "action": "read",
+    "path": "C:\\Users\\Admin\\Downloads\\ANTIGRAVITY_AI_TRAINING_PACKAGE\\03_BENCHMARK_AND_VALIDATION\\task2_reaudit\\missing_file_input\\facts.json",
+    "sha256": "3687bb7b87bcc6f11cbc67ceee886c16e0e0dc2e434248f92880f023c353ad3c"
+  },
+  {
+    "action": "duplicate",
+    "area": "A",
+    "metric": "criterion_1",
+    "evidence": {
+      "value": 1,
+      "source": "SYNTHETIC-A-market",
+      "period": "fixture",
+      "locator": "row 1",
+      "file": "facts.json",
+      "record": 21
+    }
+  },
+  {
+    "action": "duplicate",
+    "area": "A",
+    "metric": "criterion_2",
+    "evidence": {
+      "value": 1,
+      "source": "SYNTHETIC-A-market",
+      "period": "fixture",
+      "locator": "row 1",
+      "file": "facts.json",
+      "record": 21
+    }
+  },
+  {
+    "action": "duplicate",
+    "area": "A",
+    "metric": "criterion_3",
+    "evidence": {
+      "value": 1,
+      "source": "SYNTHETIC-A-market",
+      "period": "fixture",
+      "locator": "row 1",
+      "file": "facts.json",
+      "record": 21
+    }
+  },
+  {
+    "action": "duplicate",
+    "area": "A",
+    "metric": "criterion_4",
+    "evidence": {
+      "value": 1,
+      "source": "SYNTHETIC-A-market",
+      "period": "fixture",
+      "locator": "row 1",
+      "file": "facts.json",
+      "record": 21
+    }
+  },
+  {
+    "action": "failure",
+    "error": "[Errno 2] No such file or directory: 'C:\\\\Users\\\\Admin\\\\Downloads\\\\ANTIGRAVITY_AI_TRAINING_PACKAGE\\\\03_BENCHMARK_AND_VALIDATION\\\\task2_reaudit\\\\missing_file_input\\\\absent.json'"
+  }
+]

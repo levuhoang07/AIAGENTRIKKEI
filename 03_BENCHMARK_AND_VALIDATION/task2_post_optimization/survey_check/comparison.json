@@ -1,0 +1,559 @@
+{
+  "rule_version": "synthetic-only",
+  "areas": [
+    {
+      "area": "A",
+      "status": "eligible",
+      "checks": [
+        {
+          "metric": "criterion_1",
+          "status": "pass",
+          "points": 1,
+          "evidence": [
+            {
+              "value": 1,
+              "source": "SYNTHETIC-A-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 1
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "criterion_2",
+          "status": "pass",
+          "points": 1,
+          "evidence": [
+            {
+              "value": 1,
+              "source": "SYNTHETIC-A-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 1
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "criterion_3",
+          "status": "pass",
+          "points": 1,
+          "evidence": [
+            {
+              "value": 1,
+              "source": "SYNTHETIC-A-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 1
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "criterion_4",
+          "status": "pass",
+          "points": 1,
+          "evidence": [
+            {
+              "value": 1,
+              "source": "SYNTHETIC-A-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 1
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "hours",
+          "status": "pass",
+          "points": 1,
+          "evidence": [
+            {
+              "value": 1,
+              "source": "SYNTHETIC-A-capacity",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 5
+            }
+          ],
+          "rule": {
+            "operator": "<=",
+            "threshold": 2,
+            "weight": 1,
+            "unit": "h",
+            "period": "fixture",
+            "kinds": [
+              "capacity"
+            ],
+            "gate": true
+          }
+        }
+      ],
+      "missing_kinds": [],
+      "score": 5
+    },
+    {
+      "area": "B",
+      "status": "eligible",
+      "checks": [
+        {
+          "metric": "criterion_1",
+          "status": "pass",
+          "points": 1,
+          "evidence": [
+            {
+              "value": 1,
+              "source": "SYNTHETIC-B-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 6
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "criterion_2",
+          "status": "pass",
+          "points": 1,
+          "evidence": [
+            {
+              "value": 1,
+              "source": "SYNTHETIC-B-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 6
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "criterion_3",
+          "status": "pass",
+          "points": 1,
+          "evidence": [
+            {
+              "value": 1,
+              "source": "SYNTHETIC-B-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 6
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "criterion_4",
+          "status": "fail",
+          "points": 0,
+          "evidence": [
+            {
+              "value": 0,
+              "source": "SYNTHETIC-B-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 6
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "hours",
+          "status": "pass",
+          "points": 1,
+          "evidence": [
+            {
+              "value": 2,
+              "source": "SYNTHETIC-B-capacity",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 10
+            }
+          ],
+          "rule": {
+            "operator": "<=",
+            "threshold": 2,
+            "weight": 1,
+            "unit": "h",
+            "period": "fixture",
+            "kinds": [
+              "capacity"
+            ],
+            "gate": true
+          }
+        }
+      ],
+      "missing_kinds": [],
+      "score": 4
+    },
+    {
+      "area": "C",
+      "status": "excluded",
+      "checks": [
+        {
+          "metric": "criterion_1",
+          "status": "pass",
+          "points": 1,
+          "evidence": [
+            {
+              "value": 1,
+              "source": "SYNTHETIC-C-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 11
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "criterion_2",
+          "status": "pass",
+          "points": 1,
+          "evidence": [
+            {
+              "value": 1,
+              "source": "SYNTHETIC-C-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 11
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "criterion_3",
+          "status": "fail",
+          "points": 0,
+          "evidence": [
+            {
+              "value": 0,
+              "source": "SYNTHETIC-C-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 11
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "criterion_4",
+          "status": "fail",
+          "points": 0,
+          "evidence": [
+            {
+              "value": 0,
+              "source": "SYNTHETIC-C-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 11
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "hours",
+          "status": "fail",
+          "points": 0,
+          "evidence": [
+            {
+              "value": 2.01,
+              "source": "SYNTHETIC-C-capacity",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 15
+            }
+          ],
+          "rule": {
+            "operator": "<=",
+            "threshold": 2,
+            "weight": 1,
+            "unit": "h",
+            "period": "fixture",
+            "kinds": [
+              "capacity"
+            ],
+            "gate": true
+          }
+        }
+      ],
+      "missing_kinds": [],
+      "score": 2
+    },
+    {
+      "area": "D",
+      "status": "eligible",
+      "checks": [
+        {
+          "metric": "criterion_1",
+          "status": "pass",
+          "points": 1,
+          "evidence": [
+            {
+              "value": 1,
+              "source": "SYNTHETIC-D-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 16
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "criterion_2",
+          "status": "fail",
+          "points": 0,
+          "evidence": [
+            {
+              "value": 0,
+              "source": "SYNTHETIC-D-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 16
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "criterion_3",
+          "status": "fail",
+          "points": 0,
+          "evidence": [
+            {
+              "value": 0,
+              "source": "SYNTHETIC-D-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 16
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "criterion_4",
+          "status": "fail",
+          "points": 0,
+          "evidence": [
+            {
+              "value": 0,
+              "source": "SYNTHETIC-D-market",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 16
+            }
+          ],
+          "rule": {
+            "operator": ">=",
+            "threshold": 1,
+            "weight": 1,
+            "unit": "flag",
+            "period": "fixture",
+            "kinds": [
+              "market"
+            ]
+          }
+        },
+        {
+          "metric": "hours",
+          "status": "pass",
+          "points": 1,
+          "evidence": [
+            {
+              "value": 1.99,
+              "source": "SYNTHETIC-D-capacity",
+              "period": "fixture",
+              "locator": "row 1",
+              "file": "facts.json",
+              "record": 20
+            }
+          ],
+          "rule": {
+            "operator": "<=",
+            "threshold": 2,
+            "weight": 1,
+            "unit": "h",
+            "period": "fixture",
+            "kinds": [
+              "capacity"
+            ],
+            "gate": true
+          }
+        }
+      ],
+      "missing_kinds": [],
+      "score": 2
+    }
+  ],
+  "selected": [
+    "A",
+    "B"
+  ],
+  "review": [],
+  "survey_status": "incomplete",
+  "missing_survey_fields": {
+    "A": [
+      "group",
+      "verify",
+      "owner"
+    ],
+    "B": [
+      "group",
+      "verify",
+      "owner"
+    ]
+  }
+}

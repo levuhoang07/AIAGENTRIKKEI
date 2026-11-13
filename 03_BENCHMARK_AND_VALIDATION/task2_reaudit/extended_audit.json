@@ -1,0 +1,34 @@
+{
+  "tie": {
+    "exit": 0,
+    "selected": [],
+    "review": [
+      "Tie at the selection boundary. Business Development must resolve it."
+    ],
+    "trace_status": "success"
+  },
+  "stale": {
+    "exit": 0,
+    "selected": [],
+    "review": [
+      "B: verify missing or conflicting evidence"
+    ],
+    "trace_status": "success"
+  },
+  "missing_survey": {
+    "exit": 0,
+    "selected": [
+      "A",
+      "B"
+    ],
+    "review": [],
+    "trace_status": "success",
+    "complete_survey": false
+  },
+  "missing_file": {
+    "exit": 1,
+    "selected": null,
+    "review": null,
+    "trace_status": "failure"
+  }
+}

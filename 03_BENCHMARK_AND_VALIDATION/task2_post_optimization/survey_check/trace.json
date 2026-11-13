@@ -1,0 +1,96 @@
+[
+  {
+    "action": "read",
+    "path": "C:\\Users\\Admin\\Downloads\\ANTIGRAVITY_AI_TRAINING_PACKAGE\\03_BENCHMARK_AND_VALIDATION\\task2_reaudit\\missing_survey_input\\manifest.json",
+    "sha256": "425a4c66f6e6472d68fb5ad6928cb1fa5a41170eddd3d1438d9923e9c82a6dee"
+  },
+  {
+    "action": "read",
+    "path": "03_BENCHMARK_AND_VALIDATION\\task2_reaudit\\missing_survey_input\\rules.json",
+    "sha256": "09710c50191fb41b51c09f39135ac386f8e256d89f65c9a648aa108c4e7e14a8"
+  },
+  {
+    "action": "call",
+    "tool": "collect"
+  },
+  {
+    "action": "read",
+    "path": "C:\\Users\\Admin\\Downloads\\ANTIGRAVITY_AI_TRAINING_PACKAGE\\03_BENCHMARK_AND_VALIDATION\\task2_reaudit\\missing_survey_input\\facts.json",
+    "sha256": "3687bb7b87bcc6f11cbc67ceee886c16e0e0dc2e434248f92880f023c353ad3c"
+  },
+  {
+    "action": "duplicate",
+    "area": "A",
+    "metric": "criterion_1",
+    "evidence": {
+      "value": 1,
+      "source": "SYNTHETIC-A-market",
+      "period": "fixture",
+      "locator": "row 1",
+      "file": "facts.json",
+      "record": 21
+    }
+  },
+  {
+    "action": "duplicate",
+    "area": "A",
+    "metric": "criterion_2",
+    "evidence": {
+      "value": 1,
+      "source": "SYNTHETIC-A-market",
+      "period": "fixture",
+      "locator": "row 1",
+      "file": "facts.json",
+      "record": 21
+    }
+  },
+  {
+    "action": "duplicate",
+    "area": "A",
+    "metric": "criterion_3",
+    "evidence": {
+      "value": 1,
+      "source": "SYNTHETIC-A-market",
+      "period": "fixture",
+      "locator": "row 1",
+      "file": "facts.json",
+      "record": 21
+    }
+  },
+  {
+    "action": "duplicate",
+    "area": "A",
+    "metric": "criterion_4",
+    "evidence": {
+      "value": 1,
+      "source": "SYNTHETIC-A-market",
+      "period": "fixture",
+      "locator": "row 1",
+      "file": "facts.json",
+      "record": 21
+    }
+  },
+  {
+    "action": "complete",
+    "tool": "collect"
+  },
+  {
+    "action": "call",
+    "tool": "evaluate"
+  },
+  {
+    "action": "complete",
+    "tool": "evaluate",
+    "selected": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "action": "success",
+    "outputs": [
+      "report.md",
+      "comparison.json"
+    ]
+  }
+]

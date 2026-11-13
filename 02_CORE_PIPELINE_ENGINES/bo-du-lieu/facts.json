@@ -1,0 +1,262 @@
+[
+  {
+    "area": "DB-01",
+    "kind": "market",
+    "source": "Báo cáo Hiệp hội Bán lẻ Việt Nam (AVR) 2024",
+    "period": "2024",
+    "locator": "Mục 2.1, Trang 14",
+    "metrics": {
+      "scale_score": {
+        "value": 5.0,
+        "unit": "pts"
+      }
+    }
+  },
+  {
+    "area": "DB-01",
+    "kind": "product",
+    "source": "Hồ sơ Khảo sát Khớp WMS Đông Nam Bộ",
+    "period": "2024",
+    "locator": "Bảng tổng hợp nhu cầu giải pháp",
+    "metrics": {
+      "fit_score": {
+        "value": 5.0,
+        "unit": "pts"
+      }
+    }
+  },
+  {
+    "area": "DB-01",
+    "kind": "capacity",
+    "source": "Biên bản Khảo sát Hạ tầng Kỹ thuật & Cự ly",
+    "period": "2024",
+    "locator": "Tuyến TP.HCM - Bình Dương/Đồng Nai",
+    "metrics": {
+      "sla_response_time": {
+        "value": 1.0,
+        "unit": "h"
+      }
+    }
+  },
+  {
+    "area": "DB-01",
+    "kind": "competitor",
+    "source": "Báo cáo Thị phần & Đối thủ Cung cấp WMS",
+    "period": "2024",
+    "locator": "Phần 3: Phân tích cạnh tranh khu vực Đông Nam Bộ",
+    "metrics": {
+      "competition_score": {
+        "value": 3.5,
+        "unit": "pts"
+      }
+    }
+  },
+  {
+    "area": "DB-01",
+    "kind": "feedback",
+    "source": "Khảo sát Mức độ Sẵn sàng Chuyển đổi số B2B",
+    "period": "2024",
+    "locator": "Tổng hợp phiếu đánh giá khách hàng hạt nhân",
+    "metrics": {
+      "readiness_score": {
+        "value": 4.8,
+        "unit": "pts"
+      }
+    }
+  },
+  {
+    "area": "DB-02",
+    "kind": "market",
+    "source": "Niên giám Thống kê & Sở Công Thương Cần Thơ",
+    "period": "2024",
+    "locator": "Báo cáo Kinh tế ĐBSCL 2024",
+    "metrics": {
+      "scale_score": {
+        "value": 4.0,
+        "unit": "pts"
+      }
+    }
+  },
+  {
+    "area": "DB-02",
+    "kind": "product",
+    "source": "Khảo sát Mekong BizTech - Chuyển đổi số Bán lẻ",
+    "period": "2024",
+    "locator": "Nhu cầu quản lý hạn dùng nông sản & dược phẩm",
+    "metrics": {
+      "fit_score": {
+        "value": 4.5,
+        "unit": "pts"
+      }
+    }
+  },
+  {
+    "area": "DB-02",
+    "kind": "capacity",
+    "source": "Đánh giá Năng lực Phản ứng Chi nhánh Cần Thơ",
+    "period": "2024",
+    "locator": "Bán kính phục vụ on-site Cần Thơ - Vệ tinh",
+    "metrics": {
+      "sla_response_time": {
+        "value": 1.5,
+        "unit": "h"
+      }
+    }
+  },
+  {
+    "area": "DB-02",
+    "kind": "competitor",
+    "source": "Bản tin Bán lẻ Tây Nam Bộ",
+    "period": "2024",
+    "locator": "Mục đối thủ cạnh tranh & rào cản gia nhập",
+    "metrics": {
+      "competition_score": {
+        "value": 4.5,
+        "unit": "pts"
+      }
+    }
+  },
+  {
+    "area": "DB-02",
+    "kind": "feedback",
+    "source": "Ý kiến Doanh nghiệp Nông sản & Nhà thuốc ĐBSCL",
+    "period": "2024",
+    "locator": "Tổng hợp phản hồi thực địa",
+    "metrics": {
+      "readiness_score": {
+        "value": 4.2,
+        "unit": "pts"
+      }
+    }
+  },
+  {
+    "area": "DB-03",
+    "kind": "market",
+    "source": "Báo cáo Thị trường Bán lẻ Du lịch Miền Trung",
+    "period": "2024",
+    "locator": "Mục 1: Tổng quan Đà Nẵng - Nha Trang",
+    "metrics": {
+      "scale_score": {
+        "value": 3.5,
+        "unit": "pts"
+      }
+    }
+  },
+  {
+    "area": "DB-03",
+    "kind": "product",
+    "source": "Khảo sát Nhu cầu WMS Chuỗi Cung ứng Du lịch",
+    "period": "2024",
+    "locator": "Bảng tổng hợp đặc thù hải sản & minibar",
+    "metrics": {
+      "fit_score": {
+        "value": 3.0,
+        "unit": "pts"
+      }
+    }
+  },
+  {
+    "area": "DB-03",
+    "kind": "capacity",
+    "source": "Thẩm định Cự ly & Khả năng Hỗ trợ On-site Miền Trung",
+    "period": "2024",
+    "locator": "Khoảng cách cự ly > 600km từ trạm kỹ thuật",
+    "metrics": {
+      "sla_response_time": {
+        "value": 8.0,
+        "unit": "h"
+      }
+    }
+  },
+  {
+    "area": "DB-03",
+    "kind": "competitor",
+    "source": "Khảo sát Doanh nghiệp Bán lẻ Đà Nẵng - Nha Trang",
+    "period": "2024",
+    "locator": "Mục 4: Thị phần giải pháp",
+    "metrics": {
+      "competition_score": {
+        "value": 3.0,
+        "unit": "pts"
+      }
+    }
+  },
+  {
+    "area": "DB-03",
+    "kind": "feedback",
+    "source": "Ghi nhận Yêu cầu Hỗ trợ Kỹ thuật On-site Khẩn cấp",
+    "period": "2024",
+    "locator": "Khảo sát thực tế 2024",
+    "metrics": {
+      "readiness_score": {
+        "value": 3.0,
+        "unit": "pts"
+      }
+    }
+  },
+  {
+    "area": "DB-04",
+    "kind": "market",
+    "source": "Bản tin Nông sản Tây Nguyên",
+    "period": "2024",
+    "locator": "Tổng quan đại lý thu mua nông sản",
+    "metrics": {
+      "scale_score": {
+        "value": 1.0,
+        "unit": "pts"
+      }
+    }
+  },
+  {
+    "area": "DB-04",
+    "kind": "product",
+    "source": "Tạp chí Kinh tế Vùng Miền núi",
+    "period": "2024",
+    "locator": "Mức độ phù hợp giải pháp tự động hóa WMS",
+    "metrics": {
+      "fit_score": {
+        "value": 1.0,
+        "unit": "pts"
+      }
+    }
+  },
+  {
+    "area": "DB-04",
+    "kind": "capacity",
+    "source": "Báo cáo Hạ tầng Viễn thông & Giao thông Miền núi",
+    "period": "2024",
+    "locator": "Đánh giá tiếp cận on-site",
+    "metrics": {
+      "sla_response_time": {
+        "value": 6.0,
+        "unit": "h"
+      }
+    }
+  },
+  {
+    "area": "DB-04",
+    "kind": "competitor",
+    "source": "Khảo sát Cạnh tranh Tây Nguyên",
+    "period": "2024",
+    "locator": "Rào cản thị trường",
+    "metrics": {
+      "competition_score": {
+        "value": 4.0,
+        "unit": "pts"
+      }
+    }
+  },
+  {
+    "area": "DB-04",
+    "kind": "feedback",
+    "source": "Thăm dò Hộ kinh doanh Thu mua Nông sản Thô",
+    "period": "2024",
+    "locator": "Khảo sát 2024",
+    "metrics": {
+      "readiness_score": {
+        "value": 1.0,
+        "unit": "pts"
+      }
+    }
+  }
+]
